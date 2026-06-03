@@ -9,6 +9,9 @@ on:
 permissions:
   contents: read
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 jobs:
   test:
     name: Python ${{ matrix.python-version }}
@@ -43,4 +46,3 @@ jobs:
         run: python -m build
       - name: Check distribution metadata
         run: python -m twine check dist/*
-
