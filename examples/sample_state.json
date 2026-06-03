@@ -1,0 +1,25 @@
+{
+  "updated": "2026-06-03",
+  "updated_at": "2026-06-03T08:00:00+08:00",
+  "source": "FRED via fredapi",
+  "current_act": "Act 1: 1970s stagflation",
+  "dominant_label": "Act 1: 1970s stagflation",
+  "regime": {
+    "dominant": "act_1_1970s_stagflation",
+    "dominant_label": "Act 1: 1970s stagflation",
+    "probabilities": {
+      "act_1_1970s_stagflation": 0.45,
+      "act_2_1994_bond_vigilantes": 0.21,
+      "act_3_financial_repression": 0.34
+    }
+  },
+  "regime_reasoning": "Synthetic sample only.",
+  "act2_note": "Auction / three-asset selloff soft signals are not included; check them in the weekly narrative.",
+  "indicators": {},
+  "portfolio_transmission": {
+    "available": false,
+    "reason": "sample"
+  },
+  "what_changed": []
+}
+

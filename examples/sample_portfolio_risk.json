@@ -1,0 +1,21 @@
+{
+  "updated": "2026-06-03",
+  "total_delta": {
+    "btc_plus_1pct_usd": 1234.56,
+    "beta_by_factor": {
+      "BTC": 1.0,
+      "ETH": 1.4,
+      "SOL": 1.8,
+      "NVDA": 1.2,
+      "CASH": 0.0
+    }
+  },
+  "exposures_usd": {
+    "BTC": 50000,
+    "ETH": 20000,
+    "SOL": 10000,
+    "NVDA": 15000,
+    "CASH": 25000
+  }
+}
+

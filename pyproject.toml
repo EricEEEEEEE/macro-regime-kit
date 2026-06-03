@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "macro-regime-kit"
+version = "0.1.0"
+description = "FRED macro regime monitor with Obsidian reports, portfolio transmission, and AI-agent skill workflows."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Macro Regime Kit Contributors" }]
+keywords = ["macro", "fred", "obsidian", "portfolio", "codex", "claude-code"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Financial and Insurance Industry",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = [
+  "fredapi>=0.5.2",
+  "pandas>=2.0",
+  "PyYAML>=6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/EricEEEEEEE/macro-regime-kit"
+Repository = "https://github.com/EricEEEEEEE/macro-regime-kit"
+Issues = "https://github.com/EricEEEEEEE/macro-regime-kit/issues"
+
+[project.scripts]
+macro-regime = "macro_regime.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+macro_regime = ["resources/skills/macro-regime-monitor/**/*"]

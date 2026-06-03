@@ -1,0 +1,44 @@
+state_dir: "~/.macro-regime/state"
+reports_dir: "~/.macro-regime/reports"
+logs_dir: "~/.macro-regime/logs"
+timezone: "Asia/Singapore"
+
+fred:
+  fetch_days: 800
+  series:
+    yield_30y: DGS30
+    real_yield_30y: DFII30
+    curve_2s10s: T10Y2Y
+    dxy: DTWEXBGS
+    oil_wti: DCOILWTICO
+    cpi: CPIAUCSL
+
+regime:
+  thresholds:
+    yield_30y_green_lt: 5.0
+    yield_30y_red_gt: 5.5
+    real_yield_green_lt: 2.0
+    real_yield_red_gt: 2.7
+    curve_inversion_bps_lt: 0
+    curve_steep_bps_gt: 100
+    cpi_green_lt: 3.0
+    cpi_red_gt: 4.5
+
+portfolio:
+  enabled: true
+  risk_state_path: "~/.macro-regime/state/portfolio_risk.json"
+  high_beta_threshold: 1.0
+  btc_factor_name: "BTC"
+
+obsidian:
+  enabled: false
+  vault_path: ""
+  macro_folder: "宏观追踪"
+  thesis_folder: "投资论点"
+  chartsview: false
+
+thesis_feedback:
+  enabled: false
+  dry_run_default: true
+  block_marker: "MACRO-REGIME-FEEDBACK"
+

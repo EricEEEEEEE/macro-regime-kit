@@ -1,0 +1,4 @@
+display_name: Macro Regime Monitor
+short_description: Run and verify FRED macro regime, Obsidian sync, and portfolio transmission workflows.
+default_prompt: Run macro-regime doctor, explain any missing setup, and do not edit my vault or credentials.
+
