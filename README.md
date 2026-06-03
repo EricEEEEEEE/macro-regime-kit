@@ -1,5 +1,9 @@
 # Macro Regime Kit
 
+[![CI](https://github.com/EricEEEEEEE/macro-regime-kit/actions/workflows/ci.yml/badge.svg)](https://github.com/EricEEEEEEE/macro-regime-kit/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](pyproject.toml)
+
 FRED macro-regime monitoring for investors who keep research notes in Obsidian and want an AI agent such as Claude Code or Codex to help run, verify, and interpret the workflow.
 
 The kit does three things:
@@ -60,6 +64,8 @@ macro-regime doctor
 ```
 
 ## Setup SOP
+
+Short version: see [docs/quickstart.md](docs/quickstart.md). Detailed setup is below.
 
 ### 1. Install Obsidian
 
@@ -267,6 +273,8 @@ Recommended source pattern:
 
 Feed those into `portfolio_risk.json`. The macro kit consumes only the risk state, not live trading credentials.
 
+See [docs/portfolio-risk-schema.md](docs/portfolio-risk-schema.md) for the full schema.
+
 ## Automation
 
 macOS launchd or Linux cron can run:
@@ -295,6 +303,13 @@ Keep `thesis-feedback --apply` manual unless you have reviewed the dry-run behav
 python3 -m unittest discover tests
 python3 -m macro_regime.cli --version
 ```
+
+More docs:
+
+- [Obsidian setup](docs/obsidian.md)
+- [AI agent workflow](docs/ai-agents.md)
+- [Release process](docs/release.md)
+- [Roadmap](ROADMAP.md)
 
 ## Disclaimer
 

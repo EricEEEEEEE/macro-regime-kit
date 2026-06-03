@@ -1,0 +1,6 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security issue
+    url: https://github.com/EricEEEEEEE/macro-regime-kit/security/advisories
+    about: Please use a private advisory when reporting vulnerabilities.
+
